@@ -1,0 +1,595 @@
+:root {
+    /* global variable colours */
+    --pink01: #D98982;
+    --pink02: #F7E7E6;
+    --pink03: #F2D8D5;
+    --pink04: #ECC4C0;
+    --pink05: #E6B0AC;
+    --pink06: #DF9D97;
+    --pink07: #D98982;
+    --pink08: #B5726C;
+    --pink09: #915B57;
+    --pink10: #6D4541;
+    --pink11: #482E2B;
+    --pink12: #2B1B1A;
+
+    --orange01: #E66C51;
+    --orange02: #FAE2DC;
+    --orange03: #F7CEC5;
+    --orange04: #F2B5A8;
+    --orange05: #EE9D8B;
+    --orange06: #EA846E;
+    --orange07: #E66C51;
+    --orange08: #C05A44;
+    --orange09: #994836;
+    --orange10: #733629;
+    --orange11: #4D241B;
+    --orange12: #2E1610;
+
+    --brown01: #58453F;
+    --brown02: #DEDAD9;
+    --brown03: #C7C1BF;
+    --brown04: #ABA29F;
+    --brown05: #90837F;
+    --brown06: #74645F;
+    --brown07: #58453F;
+    --brown08: #493A35;
+    --brown09: #3B2E2A;
+    --brown10: #2C2320;
+    --brown11: #1D1715;
+    --brown12: #120E0D;
+
+    --green01: #6E8C03;
+    --green02: #E2E8CD;
+    --green03: #B6C581;
+    --green04: #B6C581;
+    --green05: #9EB257;
+    --green06: #869F2D;
+    --green07: #6E8C03;
+    --green08: #5C7503;
+    --green09: #495D02;
+    --green10: #374602;
+    --green11: #252F01;
+
+    --peach01: #F3E6DE;
+    --peach02: #FDFAF8;
+    --peach03: #FBF7F4;
+    --peach04: #F9F2EE;
+    --peach05: #F7EEE9;
+    --peach06: #F5EAE3;
+    --peach07: #F3E6DE;
+    --peach08: #CAC0B9;
+    --peach09: #A29994;
+    --peach10: #7A736F;
+    --peach11: #514D4A;
+    --peach12: #312E2C;
+
+    --red01: #9F1B13;
+    --red02: #ECD1D0;
+    --red03: #DFB3B0;
+    --red04: #CF8D89;
+    --red05: #BF6762;
+    --red06: #AF413A;
+    --red07: #9F1B13;
+    --red08: #841710;
+    --red09: #6A120D;
+    --red10: #500E0A;
+    --red11: #350906;
+    --red12: #200504;
+
+    --white: #ffffff;
+    --black: #000;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Montserrat;
+}
+
+
+
+@font-face {
+    font-family: Poppins;
+    src: url(./fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: Poppins-Bold;
+    src: url(./fonts/Poppins-Bold.ttf);
+}
+
+@font-face {
+    font-family: Poppins-Medium;
+    src: url(./fonts/Poppins-Medium.ttf);
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url(./fonts/Montserrat-VariableFont_wght.ttf);
+}
+
+
+/* .primary-btn {
+    display: flex;
+    width: 316px;
+    height: 64px;
+    padding: 32px 16px;
+    border-radius: 4px;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex-shrink: 0;
+    background: var(--orange01);
+    text-decoration: none;
+    color: white;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+} */
+
+.primary-btn {
+    display: inline-block;
+    background-color: var(--orange01);
+    /* Set your desired orange color */
+    color: #fff;
+    /* Set text color to white */
+    padding: 16px 8px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 316px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+
+.primary-btn:hover {
+    background-color: var(--orange09);
+}
+
+.wrapper {
+    max-width: 1312px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+
+.header-container {
+    /* position: fixed; */
+    background-color: var(--green11);
+    /* box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25); */
+    z-index: 100;
+}
+
+#header-nav-ul {
+    display: flex;
+    gap: 56px;
+    list-style: none;
+    padding: 0;
+}
+
+#header-nav {
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    /* position: fixed; */
+    width: 100%;
+    height: 80px;
+}
+
+#header-nav-ul {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+#leaf-logo {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    height: 48px;
+    width: 48px;
+}
+
+#search-icon {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+ul {
+    list-style: none;
+}
+
+.nav-button-container {
+    height: 100%;
+
+}
+
+.nav-btn-drop {
+    padding: 26px;
+}
+
+.nav-button {
+    display: flex;
+    padding-top: 26px;
+    padding-bottom: 26px;
+    color: var(--peach01);
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.dropdown {
+    max-width: 208.2px;
+    background-color: var(--green11);
+    position: absolute;
+    z-index: 999;
+    display: none;
+}
+
+
+.nav-button:hover {
+    text-decoration-line: underline;
+    text-underline-offset: 5px;
+}
+
+#food-insecurity-dropdown:hover+.dropdown {
+    display: block;
+}
+
+.dropdown:hover {
+    display: block;
+}
+
+/* end of back to top button */
+
+.wrapper {
+    max-width: 1312px;
+    margin: 0 auto;
+}
+
+#donate {
+    display: flex;
+    flex-direction: row;
+    margin-top: 63px;
+    margin-bottom: 68px;
+    column-gap: 20px;
+}
+
+#pink-bg-left {
+    display: flex;
+    flex-direction: column;
+    padding-left: 95px;
+    padding-top: 106px;
+    border-radius: 10px;
+    background: var(--peach01, #F3E6DE);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    width: 643px;
+    height: 1039px;
+}
+
+#donate-now-header h2 {
+    color: var(--brown01, #58453F);
+    font-family: Montserrat;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 60px;
+}
+
+#hr {
+    /* background: var(--brown01, #5C7503); */
+    border: 2px solid var(--green01);
+    width: 182px;
+}
+
+#donate-now-subtitle p {
+    color: var(--brown01, #58453F);
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 34px;
+}
+
+#donate-now-paragraph {
+    color: var(--brown01, #58453F);
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+
+#pink-bg-right {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    border-radius: 10px;
+    background: var(--peach01, #F3E6DE);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    width: 643px;
+    height: 1039px;
+}
+
+#text-container {
+    margin-top: 93px;
+}
+
+#donation-form-header h1 {
+    text-align: center;
+    color: var(--brown01, #58453F);
+    font-family: Montserrat;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 60px;
+    letter-spacing: -2.4px;
+    padding-bottom: 7px;
+}
+
+#donation-form-subtitle p {
+    text-align: center;
+    color: var(--brown01, #58453F);
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    padding-bottom: 30px;
+}
+
+#donate-form-steps {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 64px;
+}
+
+#donate-form-entry {
+    display: flex;
+    justify-content: center;
+    padding-top: 62px;
+}
+
+#donate-titles {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#donate-monthly-title h3 {
+    background: var(--Pink08, #B5726C);
+    width: 250px;
+    height: 56px;
+    flex-shrink: 0;
+    text-align: center;
+    padding-top: 16px;
+    color: var(--white, #FFF);
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 25px;
+}
+
+#donate-once-title h3 {
+    padding-left: 28px;
+    padding-top: 16px;
+    color: var(--brown01, #58453F);
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 25px;
+}
+
+#donate-once-subtitle {
+    padding-left: 16px;
+    padding-top: 39px;
+    padding-bottom: 25px;
+}
+
+#donate-once-amount {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 71px;
+    padding-bottom: 40px;
+}
+
+#donate-once-custom {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+#donate-form-once {
+    background: var(--white, #FFF);
+    width: 458px;
+    height: 400px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+#currency-input-container {
+    position: relative;
+    display: inline-block;
+}
+
+#amount {
+    color: #616161;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.currency-symbol {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    /* Adjust the right offset as needed */
+    transform: translateY(-50%);
+    color: #555;
+    /* Adjust the color as needed */
+}
+
+/* end of donate once form */
+#navigation-btn-container {
+    max-width: 468px;
+    display: flex;
+    flex-direction: row;
+   margin: 0 auto;
+    align-items: center;
+    margin-top: 45px;
+    margin-bottom: 45px;
+    column-gap: 164px;
+}
+
+#prev-btn {
+    background-color: transparent;
+    border: 2px solid var(--black);
+    text-decoration: none;
+    border-radius: 4px;
+    display: flex;
+    width: 148px;
+    height: 44px;
+    justify-content: center;
+    padding: 8px 16px;
+    color: black;
+    font-family: Poppins;
+    column-gap: 15px;
+    line-height: 1.5;
+    text-transform: uppercase;
+}
+
+
+
+#next-btn {
+    background-color: var(--green08);
+    color: var(--white);
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    font-family: Poppins;
+    font-size: 1rem;
+    width: 111px;
+    height: 44px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    line-height: 1.5;
+    column-gap: 15px;
+    /* Set line height for vertical centering */
+}
+
+#next-btn-container img {
+    transform: rotate(180deg);
+    filter: invert();
+    width: 24px;
+    height: 24px;
+}
+
+
+/* end of prev and next btns section */
+#links-container {
+    background-color: var(--green11);
+    display: flex;
+    height: 309px;
+}
+
+#links-section {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#footer-top-links {
+    width: 100%;
+    display: flex;
+    max-width: 440px;
+    margin: 0 auto;
+    flex-direction: row;
+    column-gap: 34px;
+    color: var(--peach01);
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+#footer-top-links p {
+    padding-top: 72px;
+}
+
+#social-icons {
+    padding-top: 59px;
+}
+
+#hr-container {
+    display: flex;
+    justify-content: center;
+}
+
+hr {
+    border: 1px solid var(--peach01);
+    margin: 23px 0;
+    width: 1090px;
+}
+
+#footer-bottom-links {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 1090px;
+    list-style: none;
+}
+
+
+.footer-link {
+    text-decoration: none;
+    color: var(--peach01);
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px;
+}
+
+.links h3 {
+    padding-top: 76px;
+}
+
+#copyright-container {
+    display: flex;
+    margin: 0 auto;
+    max-width: 1090px;
+    flex-direction: row;
+    padding-top: 50px;
+    column-gap: 9px;
+}
+
+#links-section h4 {
+    color: var(--peach01);
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px;
+}
+
+/* end of footer section */
